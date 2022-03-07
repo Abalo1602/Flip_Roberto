@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvEjeX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eje X: 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/sbEjeX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="3"
+        android:max="6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEjeX" />
+
+    <TextView
+        android:id="@+id/tvEjeY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eje Y: 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbEjeX" />
+
+    <SeekBar
+        android:id="@+id/sbEjeY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="3"
+        android:max="6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEjeY" />
+
+    <TextView
+        android:id="@+id/tvTramas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tramas: 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbEjeY" />
+
+
+    <SeekBar
+        android:id="@+id/sbTramas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="2"
+        android:max="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTramas" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbTramas">
+
+        <RadioButton
+            android:id="@+id/rbColores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colores"
+            android:checked="true"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="150dp"/>
+
+        <RadioButton
+            android:id="@+id/rbNumeros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numeros"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="104dp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbSonido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sonido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/cbVibracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibracion"
+        app:layout_constraintStart_toEndOf="@+id/cbSonido"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empezar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbVibracion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

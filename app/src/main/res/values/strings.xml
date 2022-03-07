@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Flip_Roberto</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="reglas_del_juego">Como jugar</string>
+    <string name="progreso_ejex">"Eje X : "</string>
+    <string name="progreso_ejey">"Eje Y : "</string>
+    <string name="trama">"Tramas : "</string>
+</resources>

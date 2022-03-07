@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/conf"
+        android:title="Configuración jugador"
+        android:icon="@mipmap/ic_player"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/reglas"
+        android:title="Reglas de juego"
+        android:icon="@mipmap/ic_howto"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/acercaDe"
+        android:title="@string/acerca_de"
+        android:icon="@mipmap/ic_about"
+        app:showAsAction="ifRoom"/>
+</menu>
